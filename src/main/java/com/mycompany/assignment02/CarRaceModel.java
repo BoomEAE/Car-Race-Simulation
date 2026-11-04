@@ -15,9 +15,9 @@ public class CarRaceModel {
     private String number;
     private double[] position;
     private double speed;
-    private Color color;
+    private String color;
     
-    public CarRaceModel(String type, String number, double[] position, double speed, Color color){
+    public CarRaceModel(String type, String number, double[] position, double speed, String color){
         this.type = type;
         this.number = number;
         this.position = position;
@@ -25,8 +25,12 @@ public class CarRaceModel {
         this.color = color;
     }
     
-    public void setPosition(double[] position){
-        this.position = position;
+    public String getType(){
+        return type;
+    }
+    
+    public String getNumber(){
+        return number;
     }
     
     public double[] getPosition(){
@@ -41,7 +45,7 @@ public class CarRaceModel {
         return speed;
     }
     
-    public Color getColor(){
+    public String getColor(){
         return color;
     }
 }

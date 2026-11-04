@@ -6,7 +6,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-import java.io.IOException;
+import java.io.*;
 
 /**
  * JavaFX App
@@ -16,7 +16,7 @@ public class App extends Application {
     private static Scene scene;
 
     @Override
-    public void start(Stage stage) throws IOException {
+    public void start(Stage stage) throws Exception {
         scene = new Scene(loadFXML("CarRaceFXML"), 600, 400);
         stage.setScene(scene);
         stage.show();
