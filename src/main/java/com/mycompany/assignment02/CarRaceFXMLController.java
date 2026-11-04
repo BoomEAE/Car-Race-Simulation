@@ -5,10 +5,12 @@
 package com.mycompany.assignment02;
 
 import java.net.URL;
+import java.util.Random;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+
 import javafx.scene.Group;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -63,14 +65,25 @@ public class CarRaceFXMLController implements Initializable {
     @FXML
     private Label typeLabel4;
     @FXML
+    private Label colorLabel4;
+    
+    Random rand = new Random();
+    private CarRaceModel carRaceModels[] = new CarRaceModel[4];
     
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
-    }
+        carRaceModels[0] = new CarRaceModel("Nissan Skyline", "32", new double[]{car1.getLayoutX(), car1.getLayoutY()}, (rand.nextDouble() * 50) + 10, "Gray");
+        
+        carRaceModels[1] = new CarRaceModel("Mazda RX", "7", new double[]{car2.getLayoutX(), car2.getLayoutY()}, (rand.nextDouble() * 50) + 10, "Orange");
+        
+        carRaceModels[2] = new CarRaceModel("Toyota AE", "86", new double[]{car3.getLayoutX(), car3.getLayoutY()}, (rand.nextDouble() * 50) + 10, "White");
+        
+        carRaceModels[3] = new CarRaceModel("Mitsubishi Evo", "8", new double[]{car4.getLayoutX(), car4.getLayoutY()}, (rand.nextDouble() * 50) + 10, "Yellow");
+        
+    }  
     
     @FXML
     private void startSimulation(ActionEvent event) {
