@@ -7,6 +7,9 @@ package com.mycompany.assignment02;
 import java.net.URL;
 import java.util.Random;
 import java.util.ResourceBundle;
+import javafx.animation.Animation;
+import javafx.animation.RotateTransition;
+import javafx.animation.TranslateTransition;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -14,11 +17,8 @@ import javafx.scene.Group;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.Slider;
+import javafx.scene.control.TextField;
 import javafx.scene.shape.Line;
-import javafx.animation.Animation;
-import javafx.animation.ParallelTransition;
-import javafx.animation.TranslateTransition;
-import javafx.animation.RotateTransition;
 import javafx.util.Duration;
 
 /**
@@ -27,7 +27,6 @@ import javafx.util.Duration;
  * @author ERIC -Yep-
  */
 public class CarRaceFXMLController implements Initializable {
-
 
     @FXML
     private Group car1;
@@ -48,13 +47,9 @@ public class CarRaceFXMLController implements Initializable {
     @FXML
     private Button startButton;
     @FXML
-    private Button pauseButton;
-    @FXML
-    private Button resetButton;
-    @FXML
     private Slider simSpeedSlider;
     @FXML
-    private Label simSpeedLabel;
+    private TextField simSpeedField;
     @FXML
     private Label typeLabel1;
     @FXML
@@ -78,19 +73,24 @@ public class CarRaceFXMLController implements Initializable {
     private Label podiumPositionsLabels[][];
     private double trackLength = 500;
     private int carsFinished = 0;
+    private boolean isSimPaused = false;
     
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+        
+        //
         podiumPositionsLabels = new Label[][]{{typeLabel1, colorLabel1}, {typeLabel2, colorLabel2}, {typeLabel3, colorLabel3}, {typeLabel4, colorLabel4}};
         
+        //
         carRaceModels[0] = new CarRaceModel("Nissan Skyline", "32", new double[]{car1.getLayoutX(), car1.getLayoutY()}, speedGen(), "Gray", car1, car1Rim);
         carRaceModels[1] = new CarRaceModel("Mazda RX", "7", new double[]{car2.getLayoutX(), car2.getLayoutY()}, speedGen(), "Orange", car2, car2Rim);
         carRaceModels[2] = new CarRaceModel("Toyota AE", "86", new double[]{car3.getLayoutX(), car3.getLayoutY()}, speedGen(), "White", car3, car3Rim);
         carRaceModels[3] = new CarRaceModel("Mitsubishi Evo", "8", new double[]{car4.getLayoutX(), car4.getLayoutY()}, speedGen(), "Yellow", car4, car4Rim);
         
+        //
         for(int i = 0; i < 4; i++){
             CarRaceModel carRaceModel = carRaceModels[i];
             Group car = carRaceModel.getCar();
@@ -107,6 +107,26 @@ public class CarRaceFXMLController implements Initializable {
                 updateLeaderboard(carIndex);
             });
         }
+        
+        //
+        simSpeedField.textProperty().bind(simSpeedSlider.valueProperty().asString("%.1fx"));
+        simSpeedSlider.setMajorTickUnit(0.5);
+        simSpeedSlider.setMinorTickCount(0);
+        simSpeedSlider.setShowTickMarks(true);
+        simSpeedSlider.setSnapToTicks(true);
+        
+        //
+        simSpeedSlider.valueProperty().addListener((ov, oldValue, newValue) -> {
+            for(int i = 0; i < 4; i++){
+                translateTransitions[i].stop();
+                
+                translateTransitions[i].setDuration(animationDuration(carRaceModels[i]));
+                
+                if(!isSimPaused){
+                    translateTransitions[i].play();
+                }
+            }
+        });
     }  
     
     @FXML
@@ -120,15 +140,21 @@ public class CarRaceFXMLController implements Initializable {
                 rotateTransitions[i].play();
             }
         }
+        
+        startButton.setDisable(true);
     }
 
     @FXML
     private void pauseSimulation(ActionEvent event) {
+        isSimPaused = true;
+        
         for(int i = 0; i < 4; i++){
             translateTransitions[i].stop();
             rotateTransitions[i].stop();
             carRaceModels[i].setPosition(new double[]{carRaceModels[i].getCar().getTranslateX(), carRaceModels[i].getPosition()[1]});
         }
+        
+        startButton.setDisable(false);
     }
 
     @FXML
@@ -147,6 +173,8 @@ public class CarRaceFXMLController implements Initializable {
             podiumPositionsLabels[i][1].setText("N/A");
             carsFinished = 0;
         }
+        
+        startButton.setDisable(false);
     }
     
     private double speedGen(){
@@ -156,7 +184,7 @@ public class CarRaceFXMLController implements Initializable {
     
     private Duration animationDuration(CarRaceModel carRaceModel){
         Group car = carRaceModel.getCar();
-        return new Duration((trackLength - car.getLayoutX())/(carRaceModel.getSpeed()*100000/3600000));
+        return new Duration((trackLength - car.getLayoutX())/(simSpeedSlider.getValue()*carRaceModel.getSpeed()*100000/3600000));
     }
     
     private void updateLeaderboard(int carIndex){

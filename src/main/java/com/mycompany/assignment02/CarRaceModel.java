@@ -4,7 +4,8 @@
  */
 package com.mycompany.assignment02;
 
-import javafx.scene.paint.Color;
+import javafx.scene.Group;
+import javafx.scene.shape.Line;
 
 /**
  *
@@ -16,13 +17,17 @@ public class CarRaceModel {
     private double[] position;
     private double speed;
     private String color;
+    private Group car;
+    private Line carRim;
     
-    public CarRaceModel(String type, String number, double[] position, double speed, String color){
+    public CarRaceModel(String type, String number, double[] position, double speed, String color, Group car, Line carRim){
         this.type = type;
         this.number = number;
         this.position = position;
         this.speed = speed;
         this.color = color;
+        this.car = car;
+        this.carRim = carRim;
     }
     
     public String getType(){
@@ -31,6 +36,10 @@ public class CarRaceModel {
     
     public String getNumber(){
         return number;
+    }
+    
+    public void setPosition(double[] position){
+        this.position = position;
     }
     
     public double[] getPosition(){
@@ -47,5 +56,13 @@ public class CarRaceModel {
     
     public String getColor(){
         return color;
+    }
+    
+    public Group getCar(){
+        return car;
+    }
+    
+    public Line getCarRim(){
+        return carRim;
     }
 }
