@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox fx:id="welcomeMessage" alignment="CENTER" layoutX="145.0" layoutY="127.0" opacity="0.0">
+         <children>
+            <Label text="Welcom to" textFill="WHITE" underline="true" wrapText="true">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Label>
+            <Label text="a" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label text="Race Simulation" textFill="#00c6ff">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <ImageView fx:id="imageView4" fitHeight="400.0" fitWidth="600.0" layoutX="-14.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../../Pictures/images%20for%20assignment%202/car4.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imageView3" fitHeight="400.0" fitWidth="600.0" layoutX="-3.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../../Pictures/images%20for%20assignment%202/car3.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imageView2" fitWidth="600.0" layoutX="3.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../../Pictures/images%20for%20assignment%202/car2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imageView1" fitWidth="600.0" layoutX="-3.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../../Pictures/images%20for%20assignment%202/car1.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>
