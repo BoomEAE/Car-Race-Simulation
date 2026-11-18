@@ -18,16 +18,16 @@ public class CarRaceModel {
     private double speed;
     private String color;
     private Group car;
-    private Line carRim;
+    private Line carLines[];
     
-    public CarRaceModel(String type, String number, double[] position, double speed, String color, Group car, Line carRim){
+    public CarRaceModel(String type, String number, double[] position, double speed, String color, Group car, Line carLines[]){
         this.type = type;
         this.number = number;
         this.position = position;
         this.speed = speed;
         this.color = color;
         this.car = car;
-        this.carRim = carRim;
+        this.carLines = carLines;
     }
     
     public String getType(){
@@ -62,7 +62,7 @@ public class CarRaceModel {
         return car;
     }
     
-    public Line getCarRim(){
-        return carRim;
+    public Line[] getCarLines(){
+        return carLines;
     }
 }

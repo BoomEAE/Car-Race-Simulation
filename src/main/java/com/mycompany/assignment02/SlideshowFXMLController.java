@@ -4,6 +4,8 @@
  */
 package com.mycompany.assignment02;
 
+//Github repo: https://github.com/BoomEAE/Car-Race-Simulation.git
+
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -25,7 +27,7 @@ import javafx.util.Duration;
 /**
  * FXML Controller class
  *
- * @author ERIC -Yep-
+ * @author Eric Andre Evsei
  */
 public class SlideshowFXMLController implements Initializable {
 
