@@ -17,6 +17,8 @@ import javafx.fxml.Initializable;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
+import javafx.scene.media.MediaPlayer;
+import javafx.scene.media.Media;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 import javafx.util.Duration;
@@ -49,6 +51,11 @@ public class SlideshowFXMLController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+        
+        //
+        Media media = new Media(getClass().getResource("/sounds/slideshowMusic.wav").toExternalForm());
+        MediaPlayer mediaPlayer = new MediaPlayer(media);
+        mediaPlayer.play();
         
         //Fade out transition for whiteRect
         FadeTransition ft1 = new FadeTransition(new Duration(2000), whiteRect);
@@ -108,6 +115,7 @@ public class SlideshowFXMLController implements Initializable {
         
         //When the sequential transition is done, then we go to the main simualtion scene
         st.setOnFinished(event -> {
+            mediaPlayer.stop();
             try{
                 App.setRoot("CarRaceFXML");
             }catch(IOException e){}
