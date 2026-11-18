@@ -17,7 +17,7 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        scene = new Scene(loadFXML("CarRaceFXML"), 600, 400);
+        scene = new Scene(loadFXML("SlideshowFXML"), 600, 400);
         stage.setScene(scene);
         stage.show();
     }
