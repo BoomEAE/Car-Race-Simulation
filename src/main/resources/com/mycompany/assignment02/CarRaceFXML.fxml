@@ -19,7 +19,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="1000.0" style="-fx-background-color: aliceblue;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.assignment02.CarRaceFXMLController">
+<BorderPane id="borderPaneStyle" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="1000.0" stylesheets="@../../../stylesheets/styles.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.assignment02.CarRaceFXMLController">
    <top>
       <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
          <children>
@@ -196,11 +196,11 @@
    <bottom>
       <HBox prefHeight="150.0" prefWidth="600.0" spacing="10.0" BorderPane.alignment="CENTER">
          <children>
-            <VBox alignment="CENTER" prefWidth="400.0" style="-fx-border-color: #d7dee4; -fx-border-radius: 10;">
+            <VBox id="vboxStyle" alignment="CENTER" prefWidth="400.0" stylesheets="@../../../stylesheets/styles.css">
                <children>
                   <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
                      <children>
-                        <Button fx:id="startButton" mnemonicParsing="false" onAction="#startSimulation" style="-fx-background-color: green; -fx-border-color: black; -fx-border-radius: 5; -fx-background-radius: 5;" text="Start" textFill="WHITE">
+                        <Button id="startBtnStyle" fx:id="startButton" mnemonicParsing="false" onAction="#startSimulation" stylesheets="@../../../stylesheets/styles.css" text="Start" textFill="WHITE">
                            <font>
                               <Font size="18.0" />
                            </font>
@@ -211,7 +211,7 @@
                                  </image>
                               </ImageView>
                            </graphic></Button>
-                        <Button mnemonicParsing="false" onAction="#pauseSimulation" style="-fx-background-color: orange; -fx-border-color: black; -fx-border-radius: 5; -fx-background-radius: 5;" text="Pause" textFill="WHITE">
+                        <Button id="pauseBtnStyle" mnemonicParsing="false" onAction="#pauseSimulation" stylesheets="@../../../stylesheets/styles.css" text="Pause" textFill="WHITE">
                            <font>
                               <Font size="18.0" />
                            </font>
@@ -222,7 +222,7 @@
                                  </image>
                               </ImageView>
                            </graphic></Button>
-                        <Button mnemonicParsing="false" onAction="#resetSimulation" style="-fx-background-color: red; -fx-border-color: black; -fx-border-radius: 5; -fx-background-radius: 5;" text="Reset" textFill="WHITE">
+                        <Button id="resetBtnStyle" mnemonicParsing="false" onAction="#resetSimulation" stylesheets="@../../../stylesheets/styles.css" text="Reset" textFill="WHITE">
                            <font>
                               <Font size="18.0" />
                            </font>
@@ -257,9 +257,9 @@
                   </HBox>
                </children>
             </VBox>
-            <VBox prefWidth="500.0" spacing="5.0" style="-fx-border-color: #d7dee4; -fx-border-radius: 5;">
+            <VBox id="vboxStyle" prefWidth="500.0" spacing="5.0" stylesheets="@../../../stylesheets/styles.css">
                <children>
-                  <HBox prefHeight="50.0" style="-fx-background-color: #d0d4d7;">
+                  <HBox id="hboxStyle" prefHeight="50.0" stylesheets="@../../../stylesheets/styles.css">
                      <children>
                         <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
                            <image>

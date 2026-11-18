@@ -1,0 +1,33 @@
+#borderPaneStyle{
+    -fx-background-color: aliceblue;
+}
+
+#vboxStyle{
+    -fx-border-color: #d7dee4;
+    -fx-border-radius: 10;
+}
+
+#hboxStyle{
+    -fx-background-color: #d0d4d7;
+}
+
+#startBtnStyle{
+    -fx-background-color: green;
+    -fx-border-color: black;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+#pauseBtnStyle{
+    -fx-background-color: orange;
+    -fx-border-color: black;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+#resetBtnStyle{
+    -fx-background-color: red;
+    -fx-border-color: black;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
