@@ -6,6 +6,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Slider?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
@@ -18,12 +19,110 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.assignment02.CarRaceFXMLController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="1000.0" style="-fx-background-color: aliceblue;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.assignment02.CarRaceFXMLController">
    <top>
-      <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+      <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
          <children>
-            <ImageView fitHeight="300.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true" />
-            <Group fx:id="car1" layoutY="37.05937576293945" scaleX="1.5" scaleY="1.5">
+            <Group layoutX="10.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#808080" height="250.0" layoutX="2.0" layoutY="2.0" stroke="TRANSPARENT" strokeType="INSIDE" width="980.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="250.0" stroke="#ffff0000" strokeType="INSIDE" width="69.0" />
+                  <ImageView fitHeight="54.0" fitWidth="44.0" layoutX="936.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/finishLine.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="54.0" fitWidth="44.0" layoutX="936.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/finishLine.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="54.0" fitWidth="44.0" layoutX="936.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/finishLine.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="54.0" fitWidth="44.0" layoutX="936.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/finishLine.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="54.0" fitWidth="44.0" layoutX="936.0" layoutY="133.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/finishLine.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="54.0" fitWidth="44.0" layoutX="936.0" layoutY="166.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/finishLine.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="54.0" fitWidth="44.0" layoutX="936.0" layoutY="199.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/finishLine.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="48.0" fitWidth="44.0" layoutX="936.0" layoutY="218.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/finishLine.png" />
+                     </image>
+                  </ImageView>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#797878" height="26.0" stroke="TRANSPARENT" strokeType="INSIDE" width="980.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#797878" height="26.0" layoutY="225.0" stroke="TRANSPARENT" strokeType="INSIDE" width="980.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="6.0" layoutX="59.0" layoutY="64.0" stroke="BLACK" strokeType="INSIDE" width="18.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="6.0" layoutX="59.0" layoutY="122.0" stroke="BLACK" strokeType="INSIDE" width="18.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="6.0" layoutX="59.0" layoutY="176.0" stroke="BLACK" strokeType="INSIDE" width="18.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="6.0" layoutX="111.0" layoutY="64.0" stroke="BLACK" strokeType="INSIDE" width="18.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="6.0" layoutX="111.0" layoutY="122.0" stroke="BLACK" strokeType="INSIDE" width="18.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="6.0" layoutX="111.0" layoutY="176.0" stroke="BLACK" strokeType="INSIDE" width="18.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="6.0" layoutX="166.0" layoutY="64.0" stroke="BLACK" strokeType="INSIDE" width="18.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="6.0" layoutX="166.0" layoutY="122.0" stroke="BLACK" strokeType="INSIDE" width="18.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="6.0" layoutX="166.0" layoutY="176.0" stroke="BLACK" strokeType="INSIDE" width="18.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="6.0" layoutX="216.0" layoutY="63.0" stroke="BLACK" strokeType="INSIDE" width="18.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="6.0" layoutX="216.0" layoutY="121.0" stroke="BLACK" strokeType="INSIDE" width="18.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="6.0" layoutX="216.0" layoutY="175.0" stroke="BLACK" strokeType="INSIDE" width="18.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="6.0" layoutX="268.0" layoutY="63.0" stroke="BLACK" strokeType="INSIDE" width="18.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="6.0" layoutX="268.0" layoutY="121.0" stroke="BLACK" strokeType="INSIDE" width="18.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="6.0" layoutX="268.0" layoutY="175.0" stroke="BLACK" strokeType="INSIDE" width="18.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="6.0" layoutX="323.0" layoutY="63.0" stroke="BLACK" strokeType="INSIDE" width="18.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="6.0" layoutX="323.0" layoutY="121.0" stroke="BLACK" strokeType="INSIDE" width="18.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="6.0" layoutX="323.0" layoutY="175.0" stroke="BLACK" strokeType="INSIDE" width="18.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="6.0" layoutX="376.0" layoutY="63.0" stroke="BLACK" strokeType="INSIDE" width="18.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="6.0" layoutX="376.0" layoutY="121.0" stroke="BLACK" strokeType="INSIDE" width="18.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="6.0" layoutX="376.0" layoutY="175.0" stroke="BLACK" strokeType="INSIDE" width="18.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="6.0" layoutX="428.0" layoutY="63.0" stroke="BLACK" strokeType="INSIDE" width="18.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="6.0" layoutX="428.0" layoutY="121.0" stroke="BLACK" strokeType="INSIDE" width="18.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="6.0" layoutX="428.0" layoutY="175.0" stroke="BLACK" strokeType="INSIDE" width="18.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="6.0" layoutX="483.0" layoutY="63.0" stroke="BLACK" strokeType="INSIDE" width="18.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="6.0" layoutX="483.0" layoutY="121.0" stroke="BLACK" strokeType="INSIDE" width="18.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="6.0" layoutX="483.0" layoutY="175.0" stroke="BLACK" strokeType="INSIDE" width="18.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="6.0" layoutX="533.0" layoutY="62.0" stroke="BLACK" strokeType="INSIDE" width="18.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="6.0" layoutX="533.0" layoutY="120.0" stroke="BLACK" strokeType="INSIDE" width="18.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="6.0" layoutX="533.0" layoutY="174.0" stroke="BLACK" strokeType="INSIDE" width="18.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="6.0" layoutX="585.0" layoutY="62.0" stroke="BLACK" strokeType="INSIDE" width="18.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="6.0" layoutX="585.0" layoutY="120.0" stroke="BLACK" strokeType="INSIDE" width="18.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="6.0" layoutX="585.0" layoutY="174.0" stroke="BLACK" strokeType="INSIDE" width="18.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="6.0" layoutX="640.0" layoutY="62.0" stroke="BLACK" strokeType="INSIDE" width="18.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="6.0" layoutX="640.0" layoutY="120.0" stroke="BLACK" strokeType="INSIDE" width="18.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="6.0" layoutX="640.0" layoutY="174.0" stroke="BLACK" strokeType="INSIDE" width="18.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="6.0" layoutX="690.0" layoutY="63.0" stroke="BLACK" strokeType="INSIDE" width="18.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="6.0" layoutX="690.0" layoutY="121.0" stroke="BLACK" strokeType="INSIDE" width="18.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="6.0" layoutX="690.0" layoutY="175.0" stroke="BLACK" strokeType="INSIDE" width="18.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="6.0" layoutX="745.0" layoutY="63.0" stroke="BLACK" strokeType="INSIDE" width="18.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="6.0" layoutX="745.0" layoutY="121.0" stroke="BLACK" strokeType="INSIDE" width="18.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="6.0" layoutX="745.0" layoutY="175.0" stroke="BLACK" strokeType="INSIDE" width="18.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="6.0" layoutX="795.0" layoutY="62.0" stroke="BLACK" strokeType="INSIDE" width="18.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="6.0" layoutX="795.0" layoutY="120.0" stroke="BLACK" strokeType="INSIDE" width="18.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="6.0" layoutX="795.0" layoutY="174.0" stroke="BLACK" strokeType="INSIDE" width="18.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="6.0" layoutX="847.0" layoutY="62.0" stroke="BLACK" strokeType="INSIDE" width="18.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="6.0" layoutX="847.0" layoutY="120.0" stroke="BLACK" strokeType="INSIDE" width="18.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="6.0" layoutX="847.0" layoutY="174.0" stroke="BLACK" strokeType="INSIDE" width="18.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="6.0" layoutX="902.0" layoutY="62.0" stroke="BLACK" strokeType="INSIDE" width="18.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="6.0" layoutX="902.0" layoutY="120.0" stroke="BLACK" strokeType="INSIDE" width="18.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="6.0" layoutX="902.0" layoutY="174.0" stroke="BLACK" strokeType="INSIDE" width="18.0" />
+               </children>
+            </Group>
+            <Group fx:id="car1" layoutX="19.0" layoutY="38.0">
                <children>
                   <Polygon fill="#868686" layoutX="-56.0" layoutY="-19.0" points="4.25, -19.25, -18.5, -11.5, -45.25, -1.75, -51.5, -4.75, -55.25, -6.5, -66.0, -8.0, -74.25, -8.0, -76.5, -6.5, -74.25, 7.75, -71.75, 9.25, -74.25, 11.25, -76.5, 16.75, -78.25, 20.5, -79.75, 28.0, -79.75, 34.25, -81.25, 37.75, -85.75, 39.25, -87.25, 44.25, -85.75, 49.5, -83.25, 51.25, -78.25, 53.25, -74.25, 56.75, -71.75, 58.75, -58.0, 62.5, -53.5, 64.25, -47.25, 64.25, 13.5, 67.5, 238.75, 67.5, 242.75, 66.0, 242.75, 64.25, 241.0, 60.75, 241.0, 60.75, 242.75, 58.75, 242.75, 56.75, 244.5, 55.0, 246.75, 53.25, 248.25, 51.25, 248.25, 45.75, 248.25, 42.75, 244.5, 41.25, 242.75, 35.75, 241.0, 31.25, 235.25, 28.0, 215.0, 23.0, 186.75, 16.75, 162.0, 13.75, 151.25, 13.75, 145.25, 9.25, 136.25, 3.75, 113.75, -8.0, 93.5, -19.25, 73.5, -21.75, 45.75, -23.25, 18.5, -21.75" scaleX="0.175" scaleY="0.175" stroke="BLACK" strokeType="INSIDE" />
                   <Circle layoutX="8.306251525878906" layoutY="10.390625" radius="26.0" scaleX="0.175" scaleY="0.175" stroke="BLACK" strokeType="INSIDE" />
@@ -39,7 +138,7 @@
                   <Line fx:id="car1Rim" endX="44.33527374267578" endY="10.75683307647705" startX="40.30624771118164" startY="10.39062213897705" stroke="#fcfcfc" />
                </children>
             </Group>
-            <Group fx:id="car2" layoutY="90.828125" scaleX="1.5" scaleY="1.5">
+            <Group fx:id="car2" layoutX="19.0" layoutY="92.0">
                <children>
                   <Polygon fill="#ffa11f" layoutX="41.0" layoutY="17.0" points="44.0, -51.5, 72.0, -43.25, 90.75, -36.0, 103.5, -31.25, 106.75, -33.25, 110.5, -36.0, 124.75, -36.0, 129.5, -38.0, 136.25, -39.5, 142.75, -39.5, 145.75, -38.0, 145.75, -33.25, 142.75, -28.75, 139.5, -26.5, 141.25, -18.0, 141.25, -8.25, 149.25, -2.75, 150.75, 2.5, 149.25, 8.25, 145.75, 13.5, 139.5, 17.5, 131.75, 20.25, 112.0, 23.75, 57.5, 30.5, -159.0, 30.5, -182.75, 30.5, -180.75, 27.0, -175.75, 25.5, -177.5, 20.25, -180.75, 15.0, -180.75, 10.0, -180.75, 5.25, -177.5, -0.25, -170.0, -6.0, -162.25, -10.5, -152.0, -15.25, -141.75, -18.0, -128.5, -20.25, -124.5, -22.25, -113.75, -22.25, -99.0, -22.25, -78.75, -24.0, -64.5, -28.75, -52.0, -36.0, -38.0, -43.25, -25.5, -50.0, -14.25, -53.75, -2.5, -55.75, 13.75, -55.75, 32.5, -53.75" scaleX="-0.175" scaleY="0.175" stroke="BLACK" strokeType="INSIDE" />
                   <Circle layoutX="7.53125" layoutY="10.271873474121094" radius="28.0" scaleX="0.175" scaleY="0.175" stroke="BLACK" strokeType="INSIDE" />
@@ -55,7 +154,7 @@
                   <Line fx:id="car2Rim" endX="39.53124237060547" endY="10.271870613098145" startX="39.53124237060547" startY="5.3718767166137695" stroke="WHITE" />
                </children>
             </Group>
-            <Group fx:id="car3" layoutY="139.7843780517578" scaleX="1.5" scaleY="1.5">
+            <Group fx:id="car3" layoutX="19.0" layoutY="141.0">
                <children>
                   <Polygon fill="#e4e4e4" layoutX="-32.0" layoutY="-44.0" points="-17.0, 7.5, -46.75, 17.25, -84.25, 31.75, -95.5, 31.75, -99.25, 37.0, -105.0, 50.0, -106.5, 56.0, -103.5, 64.25, -108.75, 66.25, -111.75, 68.5, -111.75, 72.75, -110.25, 75.0, -106.5, 78.25, -101.0, 81.25, -101.0, 84.0, -68.0, 86.5, -17.0, 90.75, 125.0, 90.75, 182.0, 88.0, 219.0, 88.0, 219.0, 84.0, 221.5, 76.5, 223.5, 75.0, 223.5, 71.0, 226.0, 68.5, 223.5, 64.25, 219.0, 61.25, 221.5, 58.5, 217.25, 54.5, 213.25, 51.5, 204.0, 48.25, 192.5, 45.0, 171.0, 40.75, 150.25, 37.0, 133.75, 35.25, 119.5, 33.5, 106.5, 26.75, 88.75, 17.25, 74.0, 9.25, 70.75, 7.5, 67.0, 5.5, 52.0, 4.0, 27.25, 4.0, 12.5, 4.0, -5.75, 5.5" scaleX="0.175" scaleY="0.175" stroke="BLACK" strokeType="INSIDE" />
                   <Circle layoutX="8.053125381469727" layoutY="10.840621948242188" radius="25.0" scaleX="0.175" scaleY="0.175" stroke="BLACK" strokeType="INSIDE" />
@@ -71,7 +170,7 @@
                   <Line fx:id="car3Rim" endX="37.733707427978516" endY="10.96562671661377" startX="42.05312728881836" startY="10.84062671661377" stroke="WHITE" />
                </children>
             </Group>
-            <Group fx:id="car4" layoutY="188.75" scaleX="1.5" scaleY="1.5">
+            <Group fx:id="car4" layoutX="19.0" layoutY="190.0">
                <children>
                   <Polygon fill="#e1de35" layoutX="-46.0" layoutY="16.0" points="-8.5, -57.5, -20.5, -49.25, -32.5, -42.75, -44.75, -34.25, -46.75, -34.25, -51.5, -40.5, -58.0, -47.25, -61.25, -49.25, -64.25, -50.75, -75.25, -50.75, -75.25, -47.25, -77.75, -49.25, -81.5, -49.25, -86.75, -49.25, -91.25, -49.25, -91.25, -44.5, -89.75, -37.5, -88.25, -34.25, -84.5, -28.75, -84.5, -23.5, -86.75, -18.75, -86.75, -1.75, -91.25, -0.25, -92.75, 3.75, -92.75, 8.25, -89.75, 13.0, -89.75, 17.0, -92.75, 19.0, -92.75, 24.5, -55.5, 29.25, 2.5, 33.5, 146.25, 36.75, 204.5, 38.5, 217.25, 38.5, 224.75, 36.75, 232.0, 33.5, 235.75, 31.5, 233.5, 27.75, 232.0, 23.0, 232.0, 19.0, 233.5, 17.0, 235.75, 15.25, 235.75, 11.25, 235.75, 8.25, 233.5, 3.75, 230.0, -1.75, 224.75, -6.75, 217.25, -10.75, 203.0, -15.75, 188.25, -18.75, 146.25, -26.25, 131.5, -34.25, 115.5, -44.5, 98.0, -54.5, 88.5, -57.5, 74.25, -59.75, 41.5, -61.5, 23.25, -61.5, 7.75, -61.5, -1.75, -59.75" scaleX="0.175" scaleY="0.175" stroke="BLACK" strokeType="INSIDE" />
                   <Circle layoutX="8.868749618530273" layoutY="12.875" radius="25.0" scaleX="0.175" scaleY="0.175" stroke="BLACK" strokeType="INSIDE" />
@@ -91,106 +190,138 @@
       </Pane>
    </top>
    <bottom>
-      <HBox prefHeight="150.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+      <HBox prefHeight="150.0" prefWidth="600.0" spacing="10.0" BorderPane.alignment="CENTER">
          <children>
-            <VBox prefWidth="300.0">
+            <VBox alignment="CENTER" prefWidth="400.0" style="-fx-border-color: #d7dee4; -fx-border-radius: 10;">
                <children>
-                  <HBox prefHeight="100.0" prefWidth="200.0">
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
                      <children>
-                        <Button fx:id="startButton" mnemonicParsing="false" onAction="#startSimulation" text="Start" />
-                        <Button mnemonicParsing="false" onAction="#pauseSimulation" text="Pause" />
-                        <Button mnemonicParsing="false" onAction="#resetSimulation" text="Reset" />
+                        <Button fx:id="startButton" mnemonicParsing="false" onAction="#startSimulation" style="-fx-background-color: green; -fx-border-color: black; -fx-border-radius: 5; -fx-background-radius: 5;" text="Start" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font></Button>
+                        <Button mnemonicParsing="false" onAction="#pauseSimulation" style="-fx-background-color: orange; -fx-border-color: black; -fx-border-radius: 5; -fx-background-radius: 5;" text="Pause" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font></Button>
+                        <Button mnemonicParsing="false" onAction="#resetSimulation" style="-fx-background-color: red; -fx-border-color: black; -fx-border-radius: 5; -fx-background-radius: 5;" text="Reset" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font></Button>
                      </children>
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
                   </HBox>
-                  <HBox prefHeight="100.0" prefWidth="200.0">
+                  <HBox prefHeight="100.0" prefWidth="200.0" spacing="20.0">
                      <children>
+                        <Label text="Simulation Speed: ">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
                         <Slider fx:id="simSpeedSlider" blockIncrement="0.5" max="5.0" value="1.0">
                            <HBox.margin>
                               <Insets top="5.0" />
                            </HBox.margin></Slider>
                         <TextField fx:id="simSpeedField" prefWidth="35.0" promptText="1.0x" />
                      </children>
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
                   </HBox>
                </children>
             </VBox>
-            <VBox prefWidth="300.0" spacing="5.0">
+            <VBox prefWidth="500.0" spacing="5.0" style="-fx-border-color: #d7dee4; -fx-border-radius: 5;">
                <children>
-                  <HBox prefHeight="50.0">
+                  <HBox prefHeight="50.0" style="-fx-background-color: #d0d4d7;">
                      <children>
-                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/raceFlags.png" />
+                           </image></ImageView>
                         <VBox prefHeight="200.0" prefWidth="100.0">
                            <children>
-                              <Label text="Race Finished">
+                              <Label fx:id="raceProgressLbl" text="Race Finished">
                                  <font>
                                     <Font size="16.0" />
                                  </font>
                               </Label>
-                              <Label text="In Progress" />
+                              <Label fx:id="raceDetailsLbl" text="In Progress" />
                            </children>
                         </VBox>
                      </children>
                   </HBox>
                   <Label text="Final Results:" />
-                  <HBox prefHeight="100.0">
+                  <HBox prefHeight="100.0" spacing="120.0">
                      <children>
                         <VBox prefHeight="200.0" prefWidth="100.0">
                            <children>
-                              <HBox prefHeight="100.0" prefWidth="200.0">
+                              <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="50.0">
                                  <children>
-                                    <Pane prefHeight="10.0" prefWidth="10.0">
-                                       <children>
-                                          <Circle centerX="5.0" centerY="5.0" fill="DODGERBLUE" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
-                                          <Text layoutX="2.0" layoutY="9.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" />
-                                       </children></Pane>
-                                    <Label fx:id="typeLabel1" minHeight="-Infinity" minWidth="-Infinity" text="N/A" />
-                                    <ImageView fitHeight="10.0" fitWidth="10.0" pickOnBounds="true" preserveRatio="true" />
-                                    <Label fx:id="colorLabel1" minWidth="-Infinity" text="N/A" />
+                                    <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../images/medal1stPlace.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label fx:id="typeLabel1" minHeight="-Infinity" minWidth="-Infinity" prefWidth="100.0" text="N/A" />
+                                    <ImageView fitHeight="25.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Label fx:id="colorLabel1" minWidth="-Infinity" text="1st" />
                                  </children>
                               </HBox>
-                              <HBox layoutX="10.0" layoutY="10.0" minWidth="-Infinity" prefHeight="100.0" prefWidth="200.0">
+                              <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" spacing="50.0">
                                  <children>
-                                    <Pane prefHeight="10.0" prefWidth="10.0">
-                                       <children>
-                                          <Circle centerX="5.0" centerY="5.0" fill="DODGERBLUE" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
-                                          <Text layoutX="2.0" layoutY="8.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2" />
-                                       </children></Pane>
-                                    <Label fx:id="typeLabel2" minWidth="-Infinity" text="N/A" />
-                                    <ImageView fitHeight="10.0" fitWidth="10.0" pickOnBounds="true" preserveRatio="true" />
-                                    <Label fx:id="colorLabel2" minWidth="-Infinity" text="N/A" />
+                                    <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../images/medal2ndPlace.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label fx:id="typeLabel2" minWidth="-Infinity" prefWidth="100.0" text="N/A" />
+                                    <ImageView fitHeight="25.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Label fx:id="colorLabel2" minWidth="-Infinity" text="2nd" />
                                  </children>
                               </HBox>
-                              <HBox layoutX="10.0" layoutY="51.0" prefHeight="100.0" prefWidth="200.0">
+                              <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="51.0" prefHeight="100.0" prefWidth="200.0" spacing="50.0">
                                  <children>
-                                    <Pane prefHeight="10.0" prefWidth="10.0">
-                                       <children>
-                                          <Circle centerX="5.0" centerY="5.0" fill="DODGERBLUE" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
-                                          <Text layoutX="1.0" layoutY="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3" />
-                                       </children></Pane>
-                                    <Label fx:id="typeLabel3" minWidth="-Infinity" text="N/A" />
-                                    <ImageView fitHeight="10.0" fitWidth="10.0" pickOnBounds="true" preserveRatio="true" />
-                                    <Label fx:id="colorLabel3" minWidth="-Infinity" text="N/A" />
+                                    <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../images/medal3rdPlace.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label fx:id="typeLabel3" minWidth="-Infinity" prefWidth="100.0" text="N/A" />
+                                    <ImageView fitHeight="25.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Label fx:id="colorLabel3" minWidth="-Infinity" text="3rd" />
                                  </children>
                               </HBox>
-                              <HBox layoutX="10.0" layoutY="65.0" prefHeight="100.0" prefWidth="200.0">
+                              <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="65.0" prefHeight="100.0" prefWidth="200.0" spacing="50.0">
                                  <children>
-                                    <Pane prefHeight="10.0" prefWidth="10.0">
-                                       <children>
-                                          <Circle centerX="5.0" centerY="5.0" fill="DODGERBLUE" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
-                                          <Text layoutX="2.0" layoutY="9.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4" />
-                                       </children></Pane>
-                                    <Label fx:id="typeLabel4" minWidth="-Infinity" text="N/A" />
-                                    <ImageView fitHeight="10.0" fitWidth="10.0" pickOnBounds="true" preserveRatio="true" />
-                                    <Label fx:id="colorLabel4" minWidth="-Infinity" text="N/A" />
+                                    <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../images/medal4thPlace.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label fx:id="typeLabel4" minWidth="-Infinity" prefWidth="100.0" text="N/A" />
+                                    <ImageView fitHeight="25.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Label fx:id="colorLabel4" minWidth="-Infinity" text="4th" />
                                  </children>
                               </HBox>
                            </children>
                         </VBox>
-                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/trophy.png" />
+                           </image></ImageView>
                      </children>
+                     <VBox.margin>
+                        <Insets left="20.0" />
+                     </VBox.margin>
                   </HBox>
                </children>
             </VBox>
          </children>
       </HBox>
    </bottom>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
 </BorderPane>
